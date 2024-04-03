@@ -28,7 +28,7 @@ main {
 .container {
   background-color: #00000065;
   width: 100%;
-  width: 60rem;
+  width: 80%;
   padding: 3rem 4rem;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 2px #00262946;
@@ -92,7 +92,7 @@ main {
   padding: 8px 10px;
   color: #edede9e0;
   border-radius: 10px 0 0 10px;
-  width: 35rem;
+  width: 80%;
 }
 
 input::placeholder {
@@ -234,18 +234,28 @@ footer span {
 }
 
 @media (max-width: 750px) {
-  form input {
-    padding: 20px 2px;
+  .search-box {
+    gap: 2rem;
   }
 
-  input::placeholder {
-    font-size: 1.2rem;
+  .search-title {
+    font-size: 1rem;
   }
+
+  .wather-form input {
+    padding: 8px 10px;
+  }
+
 
   .weather-card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+  }
+
+  .weather-info-container {
+    gap: 2rem;
   }
 
   .weather-info-container,
@@ -255,15 +265,25 @@ footer span {
   }
 
   .weather-title {
-    font-size: 50px;
+    font-size: 1.8rem;
   }
 
   .weather-description {
-    font-size: 20px;
+    font-size: 1rem;
+  }
+
+  .weather-temp {
+    font-size: 1.8rem;
+  }
+
+  .weather-st {
+    background-color: #4b03f49e;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
   }
 
   .weather-img-container img {
-    margin: 20px 0;
     width: 100%;
   }
 }
