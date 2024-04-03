@@ -233,39 +233,69 @@ footer span {
   text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1170px) {
+  .container {
+    padding: 2rem 0;
+  }
+
+  .weather-title {
+    font-size: 2rem;
+  }
+
+  .weather-temp {
+    font-size: 2.5rem;
+  }
+
+  .weather-st {
+    padding: 3px 15px;
+    font-size: 0.8rem;
+  }
+
+  .weather-humidity {
+    padding: 3px 30px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 910px) {
   .search-box {
     gap: 2rem;
   }
 
+  .search-msg {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+
   .search-title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
-  .wather-form input {
-    padding: 8px 10px;
+  .card-container {
+    padding: 0;
   }
-
 
   .weather-card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 25px;
   }
 
   .weather-info-container {
-    gap: 2rem;
+    gap: 1rem;
   }
 
-  .weather-info-container,
-  .weather-temp-container {
+  .weather-info-container {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .weather-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .weather-description {
@@ -277,9 +307,7 @@ footer span {
   }
 
   .weather-st {
-    background-color: #4b03f49e;
     padding: 3px 10px;
-    border-radius: 5px;
     font-size: 0.9rem;
   }
 
@@ -288,24 +316,49 @@ footer span {
   }
 }
 
-@media (max-width: 400px) {
-  .weather-title {
-    font-size: 30px;
+@media (max-width: 680px) {
+  .container {
+    width: 95%;
+  }
+  
+  .search-title {
+    font-size: 1.2rem;
+  }
+
+  .search-msg {
+    padding: 0 2rem;
+  }
+
+  .card-container {
+    padding: 0 0 1rem 0;
+  }
+
+  .weather-st {
+    font-size: 12.8px;
   }
 
   .weather-description {
-    font-size: 15px;
+    padding-top: 10px;
+    font-size: 14.4px;
+  }
+
+  .weather-extra-container {
+    gap: 1rem;
+  }
+
+  .weather-span {
+    font-size: 0.9rem;
   }
 
   .weather-img-container img {
-    margin: 20px 0;
     width: 100%;
+    height: 5rem;
   }
 }
 
-@media (max-width: 335px) {
-  .weather-title {
-    font-size: 20px;
+@media (max-width: 550px) {
+  .container {
+    width: 95%;
   }
 }
 
