@@ -21,7 +21,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 1rem;
 }
 
 /*------ container styles -------*/
@@ -51,6 +51,7 @@ main {
   font-weight: 800;
   letter-spacing: 5px;
   text-transform: uppercase;
+  text-shadow: 3px 4px 0px #2c3442;
 }
 
 /*------ container styles -------*/
@@ -102,38 +103,37 @@ input::placeholder {
 
 
 /*------ card styles -------*/
+.card-container {
+  padding: 3rem 0;
+}
 .weather-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
   align-items: center;
   background-color: transparent;
-  padding: 30px;
-  border-radius: 10px;
-  position: relative;
-  flex-wrap: wrap;
   opacity: 0;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Clima Info  */
-
 .weather-info-container {
   display: flex;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
+  gap: 5rem;
 }
 
 .weather-title {
   font-size: 3rem;
-  font-weight: 300;
+  text-shadow: 3px 4px 0px #2c3442;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #edede9e0;
 }
 
 .weather-description {
-  font-size: 16px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgb(235, 235, 245, 0.6);
   color: rgb(235, 235, 245, 0.6);
 }
 
@@ -146,12 +146,13 @@ input::placeholder {
 .weather-temp {
   font-size: 80px;
   font-weight: 300;
+  color: #ffffff;
 }
 
 .weather-st {
-  background-color: rgba(217, 217, 217, 0.1);
+  background-color: #4b03f49e;
   padding: 5px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Clima Temp Max Min */
@@ -159,6 +160,8 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .weather-minmax-container {
@@ -166,8 +169,12 @@ input::placeholder {
   flex-direction: column;
 }
 
+.weather-minmax-container i {
+  color: #4b03f4;
+}
+
 .weather-span {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -177,11 +184,30 @@ input::placeholder {
 }
 
 .weather-humidity {
-  border-top: 1px solid rgba(250, 250, 250, 0.5);
-  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
-  margin-block-start: 15px;
-  padding: 5px 30px;
+  border-radius: 5px;
+  background-color: #4b03f49e;
+  padding: 5px 40px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1rem;
 }
+
+.weather-img {
+  -webkit-filter: drop-shadow(0 0 10rem #4b03f49e);
+}
+
+.vibe {
+  animation: 4s vibe infinite ;
+}
+
+@keyframes vibe {
+  0% {
+      transform: rotateX(-15deg) translateY(0px);
+  }
+
+  50% {
+      transform: rotateX(-15deg) translateY(-10px);
+  }
 
 /*------ card styles -------*/
 
