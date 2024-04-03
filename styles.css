@@ -29,7 +29,7 @@ main {
   background-color: #00000065;
   width: 100%;
   width: 80%;
-  padding: 3rem 4rem;
+  padding: 3rem 0 1rem 0;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 2px #00262946;
   display: flex;
@@ -249,7 +249,7 @@ footer i:hover {
 
 @media (max-width: 1170px) {
   .container {
-    padding: 2rem 0;
+    padding: 2rem 0 3rem 0;
   }
 
   .weather-title {
